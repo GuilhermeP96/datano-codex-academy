@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-const home = process.env.HOME_URL || 'http://127.0.0.1:4176';
+const home = process.env.HOME_URL || 'http://127.0.0.1:4186';
 test('página inicial reúne destinos e mantém tema acessível', async ({ page }) => {
   const errors=[]; page.on('pageerror',e=>errors.push(e.message));
   expect((await page.goto(home)).ok()).toBe(true);
