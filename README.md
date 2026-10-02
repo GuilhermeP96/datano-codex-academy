@@ -42,9 +42,13 @@ Os testes cobrem quizzes, conclusão, persistência, busca/filtros, laboratório
 
 ## Publicar
 
-O GitHub Pages usa GitHub Actions. Configure a fonte de publicação como **GitHub Actions** nas configurações Pages do repositório. O workflow valida o conteúdo, executa os testes e publica o build após push na branch `main`. PRs executam validação sem deploy.
+O modo ativo de publicação usa a branch **gh-pages**, raiz `/`, com o build estático validado localmente. Em 02/10/2026, o workflow personalizado não iniciou por bloqueio de cobrança da conta; o build nativo de Pages baseado em branch funcionou. Nenhuma configuração de faturamento foi alterada.
 
-Para reverter uma atualização, reverta o commit pertinente e publique na `main`; a versão anterior do código será reconstruída. Confira o workflow e a URL após cada deploy. Não é necessário domínio próprio ou segredo de API.
+Para atualizar no modo atual, execute os checks, testes e build, copie o conteúdo de `dist/` (incluindo `.nojekyll`) para um checkout separado da branch `gh-pages`, revise e publique nessa branch. A branch `main` contém o código-fonte e o histórico editorial; ela não publica automaticamente enquanto Pages estiver neste modo.
+
+O workflow de GitHub Actions está pronto para uso quando a conta permitir execução. Para ativá-lo, selecione **GitHub Actions** como fonte nas configurações Pages. Ele valida conteúdo, executa testes e publica após push na `main`; PRs executam validação sem deploy.
+
+Para reverter no modo atual, reverta o commit pertinente da branch `gh-pages`. No modo Actions, reverta na `main` para reconstruir. Confira o build e a URL após cada deploy. Não é necessário domínio próprio ou segredo de API.
 
 ## Atualizar o conteúdo
 

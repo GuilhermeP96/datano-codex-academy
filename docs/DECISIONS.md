@@ -23,3 +23,9 @@ DatanO Commander lido, validação estrutural passou em 18 squads. Dry-run de `p
 Testes Playwright em Chromium desktop e celular, auditoria axe nos dois temas, checks do currículo e build estático. Fontes externas de tipografia são carregadas do Google Fonts; o conteúdo continua legível com fontes do sistema quando elas não carregam. O Google pode receber os metadados normais dessa requisição; progresso e anotações não são enviados pela aplicação. GitHub Pages recebe as requisições normais de acesso à hospedagem.
 
 Não há certificação, validação automatizada de exercício real, sincronização entre dispositivos, chatbot de IA nem alteração da instalação pessoal do usuário. Os atalhos e arquivos de exemplo tornam a integração com o editor concreta; a execução do exercício ocorre no ambiente do aluno.
+
+## Publicação inicial e validação
+
+Checks de sintaxe/currículo, build e 19 testes Playwright passaram localmente; um caso exclusivo de celular foi ignorado no projeto desktop. Axe verificou sete páginas nos dois temas e o modal de aula; desktop e celular foram inspecionados em screenshots. Foi corrigido contraste do marcador de trilha no tema claro e removido acesso por foco ao menu móvel fechado.
+
+O workflow personalizado `37058033552` não iniciou: o GitHub informou bloqueio de cobrança da conta. Foi usado o modo Pages `legacy`, fonte `gh-pages` na raiz, publicando somente o build validado com `.nojekyll`. O build nativo `1255819640` ficou `built` sem erro. O workflow de validação/deploy permanece disponível para ativação futura após a conta permitir execução. Faturamento, credenciais e domínio próprio não foram alterados.
