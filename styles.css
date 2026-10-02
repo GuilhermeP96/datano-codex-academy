@@ -7,3 +7,4 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}a,button{transition:none}}
 
 .brand>img{background:#142838;border-radius:50%;padding:3px}
+footer div{flex-wrap:wrap;justify-content:center}
