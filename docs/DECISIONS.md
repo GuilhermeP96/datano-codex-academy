@@ -1,31 +1,11 @@
-# Decisões do portal
+# Decisões de publicação
 
-## Escopo e arquitetura
+Em 02/10/2026, o usuário mudou o escopo: a Academy passa a ser fechada para assinantes em academy.datano.com.br. No GitHub permanecem MCPs públicos, projetos públicos e a apresentação genérica IRobot-Not.
 
-Pedido: criar e publicar no GitHub do usuário um portal completo de ensino de Codex, com comandos, integração com VS Code, identidade DatanO e interatividade.
+O repositório privado datano-academy preserva a origem do histórico e guarda cursos e backend. Este repositório público mantém o histórico original e recebe um commit normal que substitui a versão atual por uma vitrine. Não houve force-push ou exclusão de repositório. As 16 aulas já publicadas continuam acessíveis no histórico antigo; apagar a versão atual não torna informação anteriormente pública confidencial.
 
-Repositório independente `datano-codex-academy` em `GuilhermeP96`; publicação no GitHub Pages. `github.dev` é atalho de edição, não hospedagem do site. HTML/CSS/JS nativos com rotas por hash e caminhos relativos permitem funcionar sob o prefixo do Pages sem servidor de aplicação. Nenhuma chave de IA é necessária.
+Somente sete arquivos públicos são copiados para dist e gh-pages. A apresentação IRobot-Not descreve exploração, orquestração, homologação e supervisão sem dados, código, configuração ou detalhes internos. Sua simulação é fictícia e não representa medição de desempenho.
 
-As aulas têm três blocos de conteúdo, exemplo, exercício, quiz e anotações. A conclusão exige resposta correta e confirmação de prática. O progresso usa localStorage versionado, com importação que filtra IDs desconhecidos e exportação explícita. O simulador nunca chama shell, modelo ou serviço externo.
+Animus foi consultado e a memória da publicação inicial foi conciliada com a decisão atual do usuário. A busca verificada não retornou notas. O dry-run product-launch confirmou a cadeia Design Chief, Fullstack Chief e DevOps Chief; aquisição paga permanece fora do escopo. Nenhum workflow de campanha foi executado.
 
-## Marca
-
-Fonte canônica: `GuilhermeP96/gp96combr`, `public/logo-datano-white.svg` e escala `datano` em `tailwind.config.ts`. Base `#142838`, destaque azul `#8fc0df`, ação `#2c6999`. Cores secundárias das trilhas são extensões didáticas. O kit GP96 aberto no IDE era outra marca; sua paleta não foi usada como identidade DatanO.
-
-## Memória e orquestração
-
-Animus: guia obrigatório consultado, mapa `Sistema/Projetos/Datano.md` aberto. O mapa só continha candidatos; busca verificada por DatanO/Codex não retornou notas. Recall amplo não estabeleceu identidade visual. Decisões foram confrontadas com código atual e fontes oficiais.
-
-DatanO Commander lido, validação estrutural passou em 18 squads. Dry-run de `product-launch` resolveu Design Chief → Fullstack Chief → DevOps Chief → Traffic Chief. O workflow integral inclui backend, banco e aquisição paga fora do pedido; não foi executado. Foram aplicadas as orientações Tier 0 de design, arquitetura e publicação no escopo do portal. Nenhum especialista foi invocado diretamente e nenhuma campanha foi lançada.
-
-## Qualidade e privacidade
-
-Testes Playwright em Chromium desktop e celular, auditoria axe nos dois temas, checks do currículo e build estático. Fontes externas de tipografia são carregadas do Google Fonts; o conteúdo continua legível com fontes do sistema quando elas não carregam. O Google pode receber os metadados normais dessa requisição; progresso e anotações não são enviados pela aplicação. GitHub Pages recebe as requisições normais de acesso à hospedagem.
-
-Não há certificação, validação automatizada de exercício real, sincronização entre dispositivos, chatbot de IA nem alteração da instalação pessoal do usuário. Os atalhos e arquivos de exemplo tornam a integração com o editor concreta; a execução do exercício ocorre no ambiente do aluno.
-
-## Publicação inicial e validação
-
-Checks de sintaxe/currículo, build e 19 testes Playwright passaram localmente; um caso exclusivo de celular foi ignorado no projeto desktop. Axe verificou sete páginas nos dois temas e o modal de aula; desktop e celular foram inspecionados em screenshots. Foi corrigido contraste do marcador de trilha no tema claro e removido acesso por foco ao menu móvel fechado.
-
-O workflow personalizado `37058033552` não iniciou: o GitHub informou bloqueio de cobrança da conta. Foi usado o modo Pages `legacy`, fonte `gh-pages` na raiz, publicando somente o build validado com `.nojekyll`. O build nativo `1255819640` ficou `built` sem erro. O workflow de validação/deploy permanece disponível para ativação futura após a conta permitir execução. Faturamento, credenciais e domínio próprio não foram alterados.
+GitHub Actions personalizado está bloqueado por cobrança da conta. O modo Pages nativo legacy com gh-pages segue disponível. Faturamento não foi alterado.

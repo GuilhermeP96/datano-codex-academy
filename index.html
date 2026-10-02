@@ -1,41 +1,28 @@
 <!doctype html>
 <html lang="pt-BR" data-theme="dark">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#142838">
-  <meta name="description" content="Aprenda Codex no VS Code com a DatanO: trilhas, comandos, exercícios, quizzes e um laboratório interativo. Do primeiro prompt à automação.">
-  <meta property="og:title" content="DatanO · Codex Academy">
-  <meta property="og:description" content="Seu próximo nível começa com um prompt. Aprenda, pratique e construa com Codex.">
-  <meta property="og:type" content="website">
-  <title>DatanO · Codex Academy</title>
-  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="src/styles.css">
-  <script type="module" src="src/app.js"></script>
+  <meta name="description" content="Guilherme Pinheiro e DatanO: projetos, dados, automação e aprendizado com IA. Acesse GitHub, GP96, DatanO e a Academy.">
+  <meta property="og:title" content="Guilherme Pinheiro · Ecossistema DatanO">
+  <meta property="og:description" content="Da ideia à construção. Dados, automação e conhecimento conectados.">
+  <meta property="og:type" content="website"><title>Guilherme Pinheiro · DatanO</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script><script src="public-projects.js" defer></script><link rel="stylesheet" href="public-projects.css">
 </head>
 <body>
-  <a class="skip" href="#main">Pular para o conteúdo</a>
-  <aside class="sidebar" id="sidebar">
-    <a class="brand" href="#inicio"><img src="assets/logo.svg" alt="" width="40" height="40"><span>DatanO<small>CODEX ACADEMY</small></span></a>
-    <span class="nav-label">SEU ESPAÇO DE APRENDIZADO</span>
-    <nav aria-label="Navegação principal">
-      <a href="#inicio" data-nav="inicio"><span aria-hidden="true">◈</span> Visão geral</a>
-      <a href="#trilhas" data-nav="trilhas"><span aria-hidden="true">▤</span> Trilhas de aprendizado</a>
-      <a href="#comandos" data-nav="comandos"><span aria-hidden="true">⌘</span> Biblioteca de comandos</a>
-      <a href="#laboratorio" data-nav="laboratorio"><span aria-hidden="true">❯_</span> Laboratório</a>
-      <a href="#vscode" data-nav="vscode"><span aria-hidden="true">〈〉</span> Codex + VS Code</a>
-      <a href="#prompts" data-nav="prompts"><span aria-hidden="true">✧</span> Estúdio de prompts</a>
-      <a href="#recursos" data-nav="recursos"><span aria-hidden="true">↗</span> Recursos e referências</a>
-    </nav>
-    <div class="sidebar-bottom"><div class="progress-box"><div class="eyebrow">CADA PASSO CONTA</div><strong id="progress-label">Seu progresso · 0%</strong><progress id="progress" max="100" value="0" aria-label="Progresso das aulas"></progress><small id="progress-count">0 aulas concluídas</small></div><a class="external" href="https://github.com/GuilhermeP96/datano-codex-academy" target="_blank" rel="noopener">Código aberto <span>↗</span></a><small>Uma iniciativa DatanO</small></div>
-  </aside>
-  <div class="shell">
-    <header class="topbar"><button id="menu-toggle" class="icon-button mobile" aria-label="Abrir navegação" aria-expanded="false" aria-controls="sidebar">☰</button><div class="breadcrumb">Academy <span>/</span> <strong id="page-label">Visão geral</strong></div><div class="top-actions"><a href="#comandos" class="search-shortcut">⌕ Buscar comandos <kbd>/</kbd></a><button class="icon-button" id="theme-toggle" aria-label="Alternar tema claro e escuro">☀</button><a class="editor-link" href="https://github.dev/GuilhermeP96/datano-codex-academy" target="_blank" rel="noopener">Abrir no github.dev ↗</a></div></header>
-    <main id="main" tabindex="-1"></main>
-    <footer><span>© 2026 DatanO · Conhecimento que vira construção.</span><span>Material independente · Fontes OpenAI · Revisado em 02/10/2026</span></footer>
-  </div>
-  <dialog id="lesson-dialog" aria-labelledby="lesson-title"><div id="lesson-content"></div></dialog>
-  <div id="toast" role="status" aria-live="polite"></div>
-  <noscript><p>Ative JavaScript para acessar as aulas e atividades interativas. As referências estão em <a href="https://learn.chatgpt.com/docs/codex/ide">Codex no VS Code</a>.</p></noscript>
+  <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+  <header class="site-header"><a href="./" class="brand"><img src="assets/logo.svg" width="42" height="42" alt=""><span>DatanO<small>ECOSSISTEMA DE IDEIAS</small></span></a><nav aria-label="Navegação principal"><a href="#mcps">MCPs</a><a href="#projetos">Projetos</a><a href="https://academy.datano.com.br">Academy ↗</a></nav><button id="theme-toggle" aria-label="Alternar tema claro e escuro">☀</button></header>
+  <main id="conteudo">
+    <section class="hero"><div class="hero-copy"><span class="eyebrow"><i></i> GUILHERME PINHEIRO · DATANO</span><h1>Da ideia<br>à <em>construção.</em></h1><p>Dados, automação e inteligência artificial. <br>Um espaço para conectar projetos, pessoas <br>e conhecimento que vira prática.</p><div class="actions"><a class="button primary" href="https://academy.datano.com.br">Aprender na Academy <span>→</span></a><a class="button ghost" href="https://github.com/GuilhermeP96" target="_blank" rel="noopener">Explorar meu GitHub ↗</a></div><div class="hero-note"><span>〈〉 Código</span><span>⌁ Dados</span><span>✦ IA aplicada</span></div></div><div class="visual" aria-hidden="true"><div class="orbit one"></div><div class="orbit two"></div><div class="network-core"><img src="assets/logo.svg" alt="" width="108" height="108"><span>DatanO</span><small>CONEXÕES QUE CONSTROEM</small></div><span class="node node-code">〈〉<small>PROJETOS</small></span><span class="node node-data">⌁<small>DADOS</small></span><span class="node node-learn">✦<small>APRENDIZADO</small></span><div class="visual-caption">Uma ideia. Muitos caminhos.</div></div></section>
+    <section id="destinos" class="destinations"><div class="section-heading"><div><span class="eyebrow">ESCOLHA SEU PRÓXIMO PASSO</span><h2>Conheça meu ecossistema</h2></div><span>Explore. Aprenda. Conecte.</span></div><div class="destination-grid">
+      <a class="destination" href="https://github.com/GuilhermeP96" target="_blank" rel="noopener"><div class="card-top"><span class="icon">〈〉</span><span>01 / CÓDIGO</span></div><h3>Meu GitHub</h3><p>Projetos públicos, ferramentas e contribuições para explorar e acompanhar.</p><div class="card-bottom"><span>github.com/GuilhermeP96</span><b>↗</b></div></a>
+      <a class="destination" href="https://gp96.com.br" target="_blank" rel="noopener"><div class="card-top"><span class="icon">GP</span><span>02 / PORTFÓLIO</span></div><h3>GP96</h3><p>Meu espaço para apresentar trabalho, experiências e caminhos de contato.</p><div class="card-bottom"><span>gp96.com.br</span><b>↗</b></div></a>
+      <a class="destination" href="https://datano.com.br" target="_blank" rel="noopener"><div class="card-top"><span class="icon"><img src="assets/logo.svg" width="28" height="28" alt=""></span><span>03 / SOLUÇÕES</span></div><h3>DatanO</h3><p>Conheça a DatanO e sua atuação em dados, tecnologia e automação.</p><div class="card-bottom"><span>datano.com.br</span><b>↗</b></div></a>
+      <a class="destination academy-card" href="https://academy.datano.com.br"><div class="card-top"><span class="icon">✦</span><span>04 / APRENDIZADO</span></div><h3>AI Dev Academy</h3><p>Codex, Claude, Antigravity e MCPs. Aulas, exercícios e laboratórios no seu ritmo.</p><div class="card-bottom"><span>Aprenda na prática</span><b>→</b></div></a>
+    </div></section>
+    <section class="irobot-callout"><div><span class="eyebrow">DATANO · DADOS EM MOVIMENTO</span><h2>IRobot? Not!</h2><p>Da exploração de bases à orquestração e homologação.<br>Conheça possibilidades de trabalho com dados e IA.</p></div><a class="button ghost" href="#irobot">Explorar possibilidades →</a></section>
+    <section class="closing"><span>APRENDA. PRATIQUE. CONSTRUA.</span><p>O próximo projeto começa com uma boa pergunta.</p></section>
+  </main>
+  <footer><span>© 2026 Guilherme Pinheiro · DatanO</span><div><a href="https://github.com/GuilhermeP96">GitHub</a><a href="https://gp96.com.br">GP96</a><a href="https://datano.com.br">DatanO</a></div></footer>
 </body>
 </html>
