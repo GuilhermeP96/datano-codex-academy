@@ -1,0 +1,13 @@
+import { chromium } from '@playwright/test';
+import { mkdir } from 'node:fs/promises';
+await mkdir('test-results', { recursive: true });
+const browser = await chromium.launch();
+const page = await browser.newPage({ viewport: { width: 1440, height: 1100 } });
+await page.goto(process.env.PREVIEW_URL || 'http://127.0.0.1:4173');
+await page.evaluate(() => document.fonts.ready);
+await page.screenshot({ path: 'test-results/desktop.png', fullPage: true });
+const mobile = await browser.newPage({ viewport: { width: 390, height: 844 } });
+await mobile.goto(process.env.PREVIEW_URL || 'http://127.0.0.1:4173');
+await mobile.evaluate(() => document.fonts.ready);
+await mobile.screenshot({ path: 'test-results/mobile.png', fullPage: true });
+await browser.close();

@@ -1,0 +1,5 @@
+# Exemplo didático. Confira a referência da sua versão antes de aplicar.
+# Configuração pessoal: ~/.codex/config.toml
+# Configuração de projeto confiável: .codex/config.toml
+approval_policy = "on-request"
+sandbox_mode = "workspace-write"

@@ -1,0 +1,12 @@
+{
+  "folders": [{ "path": "." }],
+  "extensions": { "recommendations": ["OpenAI.chatgpt"] },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      { "label": "Academy: desenvolvimento", "type": "shell", "command": "npm run dev", "problemMatcher": [] },
+      { "label": "Academy: verificar", "type": "shell", "command": "npm run check", "problemMatcher": [] },
+      { "label": "Academy: testar", "type": "shell", "command": "npm test", "problemMatcher": [] }
+    ]
+  }
+}
