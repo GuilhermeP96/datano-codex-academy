@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#142838">
+  <meta name="description" content="Aprenda Codex no VS Code com a DatanO: trilhas, comandos, exercícios, quizzes e um laboratório interativo. Do primeiro prompt à automação.">
+  <meta property="og:title" content="DatanO · Codex Academy">
+  <meta property="og:description" content="Seu próximo nível começa com um prompt. Aprenda, pratique e construa com Codex.">
+  <meta property="og:type" content="website">
+  <title>DatanO · Codex Academy</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="src/styles.css">
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Pular para o conteúdo</a>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#inicio"><img src="assets/logo.svg" alt="" width="40" height="40"><span>DatanO<small>CODEX ACADEMY</small></span></a>
+    <span class="nav-label">SEU ESPAÇO DE APRENDIZADO</span>
+    <nav aria-label="Navegação principal">
+      <a href="#inicio" data-nav="inicio"><span aria-hidden="true">◈</span> Visão geral</a>
+      <a href="#trilhas" data-nav="trilhas"><span aria-hidden="true">▤</span> Trilhas de aprendizado</a>
+      <a href="#comandos" data-nav="comandos"><span aria-hidden="true">⌘</span> Biblioteca de comandos</a>
+      <a href="#laboratorio" data-nav="laboratorio"><span aria-hidden="true">❯_</span> Laboratório</a>
+      <a href="#vscode" data-nav="vscode"><span aria-hidden="true">〈〉</span> Codex + VS Code</a>
+      <a href="#prompts" data-nav="prompts"><span aria-hidden="true">✧</span> Estúdio de prompts</a>
+      <a href="#recursos" data-nav="recursos"><span aria-hidden="true">↗</span> Recursos e referências</a>
+    </nav>
+    <div class="sidebar-bottom"><div class="progress-box"><div class="eyebrow">CADA PASSO CONTA</div><strong id="progress-label">Seu progresso · 0%</strong><progress id="progress" max="100" value="0" aria-label="Progresso das aulas"></progress><small id="progress-count">0 aulas concluídas</small></div><a class="external" href="https://github.com/GuilhermeP96/datano-codex-academy" target="_blank" rel="noopener">Código aberto <span>↗</span></a><small>Uma iniciativa DatanO</small></div>
+  </aside>
+  <div class="shell">
+    <header class="topbar"><button id="menu-toggle" class="icon-button mobile" aria-label="Abrir navegação" aria-expanded="false" aria-controls="sidebar">☰</button><div class="breadcrumb">Academy <span>/</span> <strong id="page-label">Visão geral</strong></div><div class="top-actions"><a href="#comandos" class="search-shortcut">⌕ Buscar comandos <kbd>/</kbd></a><button class="icon-button" id="theme-toggle" aria-label="Alternar tema claro e escuro">☀</button><a class="editor-link" href="https://github.dev/GuilhermeP96/datano-codex-academy" target="_blank" rel="noopener">Abrir no github.dev ↗</a></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><span>© 2026 DatanO · Conhecimento que vira construção.</span><span>Material independente · Fontes OpenAI · Revisado em 02/10/2026</span></footer>
+  </div>
+  <dialog id="lesson-dialog" aria-labelledby="lesson-title"><div id="lesson-content"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript><p>Ative JavaScript para acessar as aulas e atividades interativas. As referências estão em <a href="https://learn.chatgpt.com/docs/codex/ide">Codex no VS Code</a>.</p></noscript>
+</body>
+</html>
