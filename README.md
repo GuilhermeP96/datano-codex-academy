@@ -1,6 +1,6 @@
 # DatanO — amostra completa de entrega com IA
 
-Jornada atual: https://academy.datano.com.br/comecar, gratuita e sem cadastro. Oito etapas levam de contrato e baseline a código validado, revisão e entrega reproduzível. Baixe starter-kit.zip, abra no seu editor, use sua IA e confira com Python. As introduções anteriores de Codex e Claude seguem disponíveis na vitrine.
+Jornada atual: https://academy.datano.com.br/comecar, gratuita e sem cadastro. A opção principal ensina quem nunca programou: conversar com a IA, conferir seis vendas fictícias e preparar um relatório em oito passos. Não exige Python, terminal, download de kit ou instalação. O relatório e o registro saem em arquivos de texto. A prática com código é opcional; seu kit e progresso continuam disponíveis separadamente. As introduções anteriores de Codex e Claude seguem disponíveis na vitrine.
 
 O repositório contém apenas material público autoral, kit, skill de amostra e adaptador MCP. Conteúdo pago e fontes privadas ficam fora dele. Veja [distribuição](docs/DISTRIBUTION.md) para Claude Code/Codex e estado das submissões. Serviço premium exige direito vigente; a amostra não requer licença.
 
@@ -14,9 +14,9 @@ Jornadas gratuitas: três aulas de Codex e três de Claude Code, com primeiros c
 
 A Academy para assinantes fica em https://academy.datano.com.br. Aulas, materiais pagos, backend, configurações e credenciais pertencem ao repositório privado datano-academy e não entram neste build.
 
-Node.js 20+; npm ci, npm run check, npm test, npm run build. O build usa uma lista explícita de nove arquivos públicos. Playwright verifica desktop/celular, links, temas, teclado, simulação e acessibilidade WCAG A/AA.
+Node.js 20+; npm ci, npm run check, npm test, npm run build. O build usa a lista explícita de arquivos públicos em scripts/check.mjs. Playwright verifica desktop/celular, links, temas, teclado, simulação e acessibilidade WCAG A/AA.
 
-URL: https://guilhermep96.github.io/datano-codex-academy/. GitHub Pages nativo, branch gh-pages, pasta /. Copiar somente os arquivos da lista de scripts/check.mjs para o checkout de publicação, revisar, fazer commit/push e solicitar o build nativo. O workflow valida o código; a publicação inclui somente a vitrine e as introduções gratuitas autorizadas, sem materiais pagos ou outros repositórios.
+URL: https://guilhermep96.github.io/datano-codex-academy/. GitHub Pages nativo, branch gh-pages, pasta /. Essa publicação é histórica; esta entrega serve a amostra atual pela VPS no domínio Academy. Não solicitar build hospedado. A validação usa scripts/ci/validate.sh na VPS; a vitrine contém somente material público autoral.
 
 A página inicial https://guilhermep96.github.io/ está em outro repositório, GuilhermeP96.github.io. Os dois sites públicos apontam à Academy privada.
 
