@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "datano-delivery": {
+      "command": "python3",
+      "args": [
+        "${CLAUDE_PLUGIN_ROOT}/delivery-mcp.py"
+      ]
+    }
+  }
+}

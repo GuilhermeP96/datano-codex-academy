@@ -1,5 +1,5 @@
 import {test,expect} from '@playwright/test';
-const home=process.env.HOME_URL||'http://127.0.0.1:4186';
+const home=process.env.HOME_URL||'http://127.0.0.1:4198';
 test('Jornadas gratuitas, progresso independente e continuação paga',async({page})=>{
  await page.addInitScript(()=>Object.defineProperty(navigator,'clipboard',{value:{async writeText(t){window.copiedExample=t;}}}));
  await page.goto(home);await page.getByRole('link',{name:'Começar gratuitamente'}).click();

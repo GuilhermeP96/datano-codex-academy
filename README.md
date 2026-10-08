@@ -1,3 +1,11 @@
+# DatanO — amostra completa de entrega com IA
+
+Jornada atual: https://academy.datano.com.br/comecar, gratuita e sem cadastro. Oito etapas levam de contrato e baseline a código validado, revisão e entrega reproduzível. Baixe starter-kit.zip, abra no seu editor, use sua IA e confira com Python. As introduções anteriores de Codex e Claude seguem disponíveis na vitrine.
+
+O repositório contém apenas material público autoral, kit, skill de amostra e adaptador MCP. Conteúdo pago e fontes privadas ficam fora dele. Veja [distribuição](docs/DISTRIBUTION.md) para Claude Code/Codex e estado das submissões. Serviço premium exige direito vigente; a amostra não requer licença.
+
+CI e build executam na VPS com scripts/ci/validate.sh. A publicação histórica gh-pages não foi tratada como pipeline local. O domínio Academy serve a amostra atual pela VPS.
+
 # DatanO · Vitrine pública
 
 Projetos públicos, MCPs públicos e apresentação das possibilidades do IRobot-Not, com identidade visual DatanO. A simulação usa volumes fictícios no navegador e não acessa bases reais.
