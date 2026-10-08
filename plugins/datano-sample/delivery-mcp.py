@@ -9,7 +9,7 @@ ENDPOINT = "https://academy.datano.com.br/api/mcp"
 
 def forward(message):
     credential = os.environ.get("DATANO_LICENSE_TOKEN", "")
-    headers = {"Content-Type": "application/json", "Accept": "application/json, text/event-stream"}
+    headers = {"User-Agent": "DatanO-Agents-Sample/1.1 (+https://academy.datano.com.br)", "Content-Type": "application/json", "Accept": "application/json, text/event-stream"}
     if credential:
         headers["Authorization"] = "Bearer " + credential
     req = urllib.request.Request(ENDPOINT, json.dumps(message).encode(), headers=headers, method="POST")
