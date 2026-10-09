@@ -4,6 +4,9 @@ Comece em https://academy.datano.com.br/comecar#agents-sample. Escolha divulgaç
 
 Os três papéis orientam a conversa na ferramenta de IA escolhida. A Academy monta pedidos, preserva textos no navegador e organiza arquivos; não executa modelos nem lê sua conversa. Rascunhos iniciais são modelos editáveis, identificados como tais. Você revisa informações antes de usar. A amostra não publica nem envia materiais.
 
+## Baixar e preparar com seu agente
+A amostra de instalação 1.1.1 inclui um [passo a passo de instalação e uso](AGENTS-SETUP.md), com pedido pronto para o agente localizar a fonte oficial, baixar o ZIP, conferir SHA-256 e preparar a skill ou o MCP. A Academy tem o botão Copiar pedido para baixar e preparar, adaptado à ferramenta e à missão. Sem ferramentas de arquivos, siga o caminho pelo navegador.
+
 ## A mesma missão na skill/MCP
 No Claude Code, adicione o marketplace GuilhermeP96/datano-codex-academy e instale datano-sample@datano. Peça à skill delivery-kit a missão desejada. No Codex, copie a pasta completa skills/delivery-kit para .agents/skills/delivery-kit; ela já inclui suas referências, scripts e package.json. A skill também pode consultar os contratos via MCP datano-delivery. Os três contratos estão em skills/delivery-kit/references/agents-sample-data.js.
 
