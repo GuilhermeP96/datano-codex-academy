@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 const home = process.env.HOME_URL || 'http://127.0.0.1:4198';
 test('página inicial reúne destinos e mantém tema acessível', async ({ page }) => {
+  test.setTimeout(90000); // Both-theme whole-page audits and a full screenshot on the shared VPS.
   const errors=[]; page.on('pageerror',e=>errors.push(e.message));
   expect((await page.goto(home)).ok()).toBe(true);
   await expect(page.getByRole('heading',{level:1})).toContainText('construção');

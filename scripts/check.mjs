@@ -1,5 +1,5 @@
 import { readFile, access } from 'node:fs/promises';
-export const publicFiles = ['index.html', 'styles.css', 'app.js', 'public-projects.css', 'public-projects.js', 'journeys.css', 'journeys.js', 'delivery.js', 'delivery.css', 'starter-kit.zip', 'agents-sample.js', 'agents-sample-data.js', 'agents-sample-zip.js', 'agents-sample.css', 'agents-sample-setup.js', 'datano-agents-sample.zip', 'datano-agents-sample.zip.sha256', 'assets/logo.svg', '.nojekyll'];
+export const publicFiles = ['learning-ui.js','learning-ui.css','learning-account.js','index.html', 'styles.css', 'app.js', 'public-projects.css', 'public-projects.js', 'journeys.css', 'journeys.js', 'delivery.js', 'delivery.css', 'starter-kit.zip', 'agents-sample.js', 'agents-sample-data.js', 'agents-sample-zip.js', 'agents-sample.css', 'agents-sample-setup.js', 'datano-agents-sample.zip', 'datano-agents-sample.zip.sha256', 'assets/logo.svg', '.nojekyll'];
 for (const path of publicFiles) await access(path);
 const html = await readFile('index.html', 'utf8');
 const js = await readFile('agents-sample-setup.js','utf8') + await readFile('agents-sample.js','utf8') + await readFile('agents-sample-data.js','utf8') + await readFile('agents-sample-zip.js','utf8') + await readFile('delivery.js','utf8') + await readFile('public-projects.js', 'utf8') + await readFile('journeys.js', 'utf8');

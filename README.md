@@ -21,3 +21,9 @@ URL: https://guilhermep96.github.io/datano-codex-academy/. GitHub Pages nativo, 
 A página inicial https://guilhermep96.github.io/ está em outro repositório, GuilhermeP96.github.io. Os dois sites públicos apontam à Academy privada.
 
 O histórico inicial de 16 aulas, que já foi publicado, permanece nos commits antigos. A mudança retira o currículo antigo da versão atual sem reescrever o histórico. Novos materiais privados nunca devem ser enviados a este repositório.
+
+## Oficinas guiadas
+
+As amostras de entrega e DatanO-Agents têm etapas avançáveis, rascunhos locais, estados de conclusão/ajuste e telas simuladas de conversa, revisão, execução e conexão. As simulações são exercícios com respostas prontas; não executam IA nem comandos. Na Academy, a conta gratuita permite conectar a jornada ao progresso por conta e obter certificado de conclusão da jornada simplificada. O curso avançado depende da assinatura.
+
+A sincronização é opcional no gratuito, confirma a versão escolhida e protege contra sobrescrita de outro dispositivo. A verificação pública de certificado usa um código emitido pelo servidor da Academy; publicar esta vitrine estática não emite certificados.
