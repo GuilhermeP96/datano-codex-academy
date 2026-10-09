@@ -1,7 +1,7 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.GuilhermeP96/datano-delivery",
-  "description": "DatanO-Agents practical sample missions and licensed project contracts. No server AI execution.",
+  "description": "Datano-Agents practical sample missions and licensed project contracts. No server AI execution.",
   "repository": {
     "url": "https://github.com/GuilhermeP96/datano-codex-academy",
     "source": "github"
