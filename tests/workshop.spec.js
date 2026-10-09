@@ -23,7 +23,7 @@ test('Simulations teach failure and correction without running commands or conta
 });
 
 test('A failed real sample check preserves writing and a corrected stage survives reload',async({page})=>{
- await page.goto('/');const s=page.locator('#free-delivery');const note='Conferi o objetivo desta etapa e preservei minha explicação mesmo quando a conferência falhou.';
+ await page.goto('/');await page.getByLabel('Jornada gratuita',{exact:true}).selectOption('free-delivery');const s=page.locator('#free-delivery');const note='Conferi o objetivo desta etapa e preservei minha explicação mesmo quando a conferência falhou.';
  await s.getByLabel('Minha anotação desta etapa').fill(note);await s.getByRole('button',{name:/Salvar etapa e continuar/}).click();
  await expect(s.locator('#delivery-feedback')).not.toBeEmpty();await expect(s.getByLabel('Minha anotação desta etapa')).toHaveValue(note);
  await expect(s.locator('.delivery-stage h3')).toHaveText('Conheça sua missão');
@@ -32,4 +32,17 @@ test('A failed real sample check preserves writing and a corrected stage survive
  await page.reload();await expect(s.locator('.delivery-stage h3')).toHaveText('Conheça as vendas');
  await s.locator('[data-delivery-stage="0"]').click();await expect(s.getByLabel('Minha anotação desta etapa')).toHaveValue(note);
  await expect(s).toContainText('1 de 8 etapas concluídas');expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
+
+test('The learner switches journeys and edits one material at a time without losing work',async({page})=>{
+ await page.goto('/');await expect(page.locator('#agents-sample')).toBeVisible();await expect(page.locator('#free-delivery')).toBeHidden();
+ await page.getByLabel('Jornada gratuita',{exact:true}).selectOption('free-delivery');await expect(page.locator('#free-delivery')).toBeVisible();await expect(page.locator('#agents-sample')).toBeHidden();
+ const note='Meu texto permanece quando eu troco de jornada e volto à atividade.';await page.getByLabel('Minha anotação desta etapa').fill(note);
+ await page.getByLabel('Jornada gratuita',{exact:true}).selectOption('agents-sample');const s=page.locator('#agents-sample');
+ await s.getByRole('button',{name:'Começar com um exemplo fictício'}).click();await s.getByRole('button',{name:'Salvar objetivo e seguir'}).click();await s.getByRole('button',{name:'Preparar plano inicial'}).click();await s.getByRole('button',{name:'Conferi o plano'}).click();await s.getByRole('button',{name:'Preencher rascunhos editáveis'}).click();
+ await expect(s.locator('[data-artifact-panel]:visible')).toHaveCount(1);const text='Minha apresentação revisada permanece quando avanço ao material seguinte e volto para conferir o que escrevi.';await s.getByLabel('Conteúdo: Apresentação da sua oferta').fill(text);
+ await s.getByRole('button',{name:'Material seguinte'}).click();await expect(s.getByLabel('Conteúdo: Página de apresentação')).toBeVisible();await expect(s.getByLabel('Conteúdo: Apresentação da sua oferta')).toBeHidden();await s.getByRole('button',{name:'Material anterior'}).click();await expect(s.getByLabel('Conteúdo: Apresentação da sua oferta')).toHaveValue(text);
+ await page.getByLabel('Jornada gratuita',{exact:true}).selectOption('free-delivery');await expect(page.getByLabel('Minha anotação desta etapa')).toHaveValue(note);await page.reload();await expect(page.locator('#free-delivery')).toBeVisible();await expect(page.getByLabel('Minha anotação desta etapa')).toHaveValue(note);
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });

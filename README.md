@@ -27,3 +27,7 @@ O histórico inicial de 16 aulas, que já foi publicado, permanece nos commits a
 As amostras de entrega e DatanO-Agents têm etapas avançáveis, rascunhos locais, estados de conclusão/ajuste e telas simuladas de conversa, revisão, execução e conexão. As simulações são exercícios com respostas prontas; não executam IA nem comandos. Na Academy, a conta gratuita permite conectar a jornada ao progresso por conta e obter certificado de conclusão da jornada simplificada. O curso avançado depende da assinatura.
 
 A sincronização é opcional no gratuito, confirma a versão escolhida e protege contra sobrescrita de outro dispositivo. A verificação pública de certificado usa um código emitido pelo servidor da Academy; publicar esta vitrine estática não emite certificados.
+
+### Experiência progressiva da amostra
+
+Uma jornada gratuita fica visível por vez: DatanO-Agents ou fundamentos. A escolha e as etapas são retomadas; cinco materiais da missão usam um editor por tela, com Material seguinte/anterior e rascunhos preservados. Instruções de instalação, prompts longos, simulações opcionais e política de armazenamento ficam recolhidos. Referências de navegação/retomada e prática focada: [player da Udemy](https://support.udemy.com/hc/en-us/sections/206457187-Course-player) e [prática/revisão do Duolingo](https://blog.duolingo.com/guide-to-duolingo-practice-hub/). Não se reproduzem interfaces proprietárias nem se alega pesquisa com alunos.

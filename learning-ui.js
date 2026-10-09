@@ -1,6 +1,14 @@
 // Componentes de prática. Nenhuma simulação executa código, modelo ou conexão.
 export const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 export const stateLabels={pending:'Não iniciada',in_progress:'Em andamento',success:'Concluída',failed:'Precisa de ajuste'};
+export function mountJourneySwitch(){
+ const agents=document.querySelector('#agents-sample'),foundation=document.querySelector('#free-delivery');if(!agents||!foundation||document.querySelector('#journey-choice'))return;
+ const nav=document.createElement('nav');nav.className='journey-choice';nav.setAttribute('aria-label','Escolha da jornada gratuita');nav.innerHTML='<label for="journey-choice">Jornada gratuita</label><select id="journey-choice"><option value="agents-sample">DatanO-Agents · minha entrega completa</option><option value="free-delivery">Fundamentos · relatório com IA</option></select>';(agents.previousElementSibling?.classList.contains('learning-cloud')?agents.previousElementSibling:agents).before(nav);
+ const select=nav.querySelector('select');let chosen='agents-sample';try{if(localStorage.getItem('datano-free-journey')==='free-delivery')chosen='free-delivery';}catch{}
+ function show(id,focus=false){chosen=id;select.value=id;for(const root of [agents,foundation]){root.hidden=root.id!==id;const cloud=root.previousElementSibling;if(cloud?.classList.contains('learning-cloud'))cloud.hidden=root.hidden;}try{localStorage.setItem('datano-free-journey',id);}catch{}if(focus){nav.scrollIntoView({block:'start'});document.querySelector('#'+id+' h2')?.setAttribute('tabindex','-1');document.querySelector('#'+id+' h2')?.focus({preventScroll:true});}}
+ function route(){const id=location.hash.slice(1);if(['agents-sample','free-delivery'].includes(id))show(id);}
+ const hash=location.hash.slice(1);show(['agents-sample','free-delivery'].includes(hash)?hash:chosen);select.addEventListener('change',()=>{history.replaceState(null,'',location.pathname+location.search+'#'+select.value);show(select.value,true);});window.addEventListener('hashchange',route);
+}
 export function stepProgress({titles,current,statuses={},action}){
  const count=titles.filter((_,i)=>statuses[i]==='success').length;
  return `<div class="learning-progress"><div><strong>${count} de ${titles.length} etapas concluídas</strong><span>${Math.round(count/titles.length*100)}%</span></div><progress max="${titles.length}" value="${count}" aria-label="Etapas concluídas"></progress>${action?`<nav class="learning-path" aria-label="Mapa da jornada">${titles.map((t,i)=>`<button type="button" data-${action}="${i}" data-state="${esc(statuses[i]||'pending')}" aria-current="${i===current?'step':'false'}"><span aria-hidden="true">${statuses[i]==='success'?'✓':statuses[i]==='failed'?'!':i+1}</span><strong>${esc(t)}</strong><small>${stateLabels[statuses[i]||'pending']}</small></button>`).join('')}</nav>`:''}</div>`;

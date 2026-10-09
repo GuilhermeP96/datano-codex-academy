@@ -3,7 +3,7 @@ import {readFile} from 'node:fs/promises';
 test('A beginner completes a delivery without code and exports their actual report',async({page})=>{
  test.setTimeout(60000);
  const calls=[];page.on('request',r=>{if(r.method()==='POST')calls.push(r.url())});
- await page.goto('/');const s=page.locator('#free-delivery');
+ await page.goto('/');await page.getByLabel('Jornada gratuita',{exact:true}).selectOption('free-delivery');const s=page.locator('#free-delivery');
  await expect(s.getByLabel('Como quero praticar')).toHaveValue('guided');
  await expect(s.getByRole('link',{name:'Baixar kit de prática'})).toHaveCount(0);
  await expect(s.locator('[data-delivery-stage]')).toHaveCount(8);
@@ -34,7 +34,7 @@ test('A beginner completes a delivery without code and exports their actual repo
 });
 test('The optional code practice retains earlier learner progress separately',async({page})=>{
  await page.addInitScript(()=>localStorage.setItem('datano-free-delivery-v1',JSON.stringify({stage:2,completed:[0,1],evidence:{1:'Erro inicial registrado na versão anterior.'}})));
- await page.goto('/');const s=page.locator('#free-delivery');await expect(s.locator('.delivery-stage h3')).toHaveText('Conheça sua missão');
+ await page.goto('/');await page.getByLabel('Jornada gratuita',{exact:true}).selectOption('free-delivery');const s=page.locator('#free-delivery');await expect(s.locator('.delivery-stage h3')).toHaveText('Conheça sua missão');
  await s.getByLabel('Como quero praticar').selectOption('technical');await expect(s.locator('.delivery-stage h3')).toHaveText('Dados: calcule o esperado');
  await expect(s).toContainText('2 de 8 etapas concluídas');await expect(s.getByRole('link',{name:'Baixar kit de prática'})).toHaveAttribute('href','starter-kit.zip');
  await s.locator('[data-delivery-stage="1"]').click();await expect(s.getByLabel('Evidência da sua execução')).toHaveValue('Erro inicial registrado na versão anterior.');
