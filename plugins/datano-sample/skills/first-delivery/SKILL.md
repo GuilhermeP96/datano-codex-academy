@@ -2,7 +2,7 @@
 name: first-delivery
 description: Conduza uma primeira entrega de dados fictícios com contrato, validação e documentação. Use quando o usuário quiser praticar um projeto com IA.
 ---
-# Primeira entrega DatanO
+# Primeira entrega Datano
 Guie o usuário pelo ciclo: explicar a tarefa → pedir ajuda à IA → conferir a resposta → revisar e entregar. Fale com quem nunca programou: uma orientação por vez, palavras comuns e exemplos de resultado.
 Amostra independente e gratuita. Não exige licença nem envia dados a servidores.
 1. Comece por https://academy.datano.com.br/comecar, opção Sem programação. Ajude o aluno a ler seis vendas fictícias, pedir o cálculo, conferir R$ 129,50 e três vendas incluídas/três excluídas, e preparar um relatório. Não proponha instalações, terminal ou código como pré-requisito. Peça ao aluno que explique o resultado e os motivos das exclusões com suas palavras.

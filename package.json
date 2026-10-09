@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Vitrine pública DatanO: MCPs, projetos públicos e possibilidades IRobot-Not",
+  "description": "Vitrine pública Datano: MCPs, projetos públicos e possibilidades IRobot-Not",
   "scripts": {
     "dev": "node scripts/serve.mjs",
     "build": "node scripts/build.mjs",

@@ -1,9 +1,9 @@
 ---
 name: delivery-kit
 description: >-
-  Produza uma entrega prática completa com a amostra DatanO-Agents: divulgação de negócio, atendimento ou decisão com dados. Use quando o usuário quiser materiais prontos para revisar e usar, inclusive sem saber programar.
+  Produza uma entrega prática completa com a amostra Datano-Agents: divulgação de negócio, atendimento ou decisão com dados. Use quando o usuário quiser materiais prontos para revisar e usar, inclusive sem saber programar.
 ---
-# Entrega prática DatanO-Agents
+# Entrega prática Datano-Agents
 
 Use as três missões públicas da Academy em https://academy.datano.com.br/comecar#agents-sample. Explique em linguagem comum os papéis Organizador, Criador e Revisor. Eles são perspectivas sequenciais na IA do usuário, não prova de execução de agentes independentes.
 

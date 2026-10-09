@@ -1,4 +1,4 @@
-# Prática opcional com código — DatanO
+# Prática opcional com código — Datano
 
 Nunca programou? Faça primeiro a atividade completa em https://academy.datano.com.br/comecar, escolhendo **Sem programação**. Ela usa somente um chat de IA e seu navegador. Não precisa deste kit nem de instalações.
 

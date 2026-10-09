@@ -1,14 +1,14 @@
-# DatanO — amostra completa de entrega com IA
+# Datano — amostra completa de entrega com IA
 
-Jornada atual: https://academy.datano.com.br/comecar#agents-sample, gratuita e sem cadastro. A amostra integrada DatanO-Agents oferece três missões completas, cinco materiais por missão, plano e revisão. Você pode transferir o objetivo à skill/MCP e importar o resultado na Academy. Veja [amostra Agents](docs/AGENTS-SAMPLE.md) e o [pedido pronto para seu agente baixar e preparar a amostra](docs/AGENTS-SETUP.md). O guia traz download oficial, conferência SHA-256 e passos para Codex, Claude Code e MCP. A atividade de fundamentos também ensina quem nunca programou: conversar com a IA, conferir seis vendas fictícias e preparar um relatório em oito passos. Não exige Python, terminal, download de kit ou instalação. O relatório e o registro saem em arquivos de texto. A prática com código é opcional; seu kit e progresso continuam disponíveis separadamente. As introduções anteriores de Codex e Claude seguem disponíveis na vitrine.
+Jornada atual: https://academy.datano.com.br/comecar#agents-sample, gratuita e sem cadastro. A amostra integrada Datano-Agents oferece três missões completas, cinco materiais por missão, plano e revisão. Você pode transferir o objetivo à skill/MCP e importar o resultado na Academy. Veja [amostra Agents](docs/AGENTS-SAMPLE.md) e o [pedido pronto para seu agente baixar e preparar a amostra](docs/AGENTS-SETUP.md). O guia traz download oficial, conferência SHA-256 e passos para Codex, Claude Code e MCP. A atividade de fundamentos também ensina quem nunca programou: conversar com a IA, conferir seis vendas fictícias e preparar um relatório em oito passos. Não exige Python, terminal, download de kit ou instalação. O relatório e o registro saem em arquivos de texto. A prática com código é opcional; seu kit e progresso continuam disponíveis separadamente. As introduções anteriores de Codex e Claude seguem disponíveis na vitrine.
 
 O repositório contém apenas material público autoral, kit, skill de amostra e adaptador MCP. Conteúdo pago e fontes privadas ficam fora dele. Veja [distribuição](docs/DISTRIBUTION.md) para Claude Code/Codex e estado das submissões. Serviço premium exige direito vigente; a amostra não requer licença.
 
 CI e build executam na VPS com scripts/ci/validate.sh. A publicação histórica gh-pages não foi tratada como pipeline local. O domínio Academy serve a amostra atual pela VPS.
 
-# DatanO · Vitrine pública
+# Datano · Vitrine pública
 
-Projetos públicos, MCPs públicos e apresentação das possibilidades do IRobot-Not, com identidade visual DatanO. A simulação usa volumes fictícios no navegador e não acessa bases reais.
+Projetos públicos, MCPs públicos e apresentação das possibilidades do IRobot-Not, com identidade visual Datano. A simulação usa volumes fictícios no navegador e não acessa bases reais.
 
 Jornadas gratuitas: três aulas de Codex e três de Claude Code, com primeiros comandos, prompts, MCP de documentação, exercícios e progresso local. Conteúdo autoral em journeys.js, separado do currículo privado. Links para continuar a trilha paga ao final de cada jornada. Fontes oficiais: https://learn.chatgpt.com/docs/codex/cli, https://learn.chatgpt.com/docs/developer-commands, https://developers.openai.com/learn/docs-mcp, https://code.claude.com/docs/en/quickstart e https://code.claude.com/docs/en/mcp. Revisão: 2026-10-02.
 
@@ -24,10 +24,10 @@ O histórico inicial de 16 aulas, que já foi publicado, permanece nos commits a
 
 ## Oficinas guiadas
 
-As amostras de entrega e DatanO-Agents têm etapas avançáveis, rascunhos locais, estados de conclusão/ajuste e telas simuladas de conversa, revisão, execução e conexão. As simulações são exercícios com respostas prontas; não executam IA nem comandos. Na Academy, a conta gratuita permite conectar a jornada ao progresso por conta e obter certificado de conclusão da jornada simplificada. O curso avançado depende da assinatura.
+As amostras de entrega e Datano-Agents têm etapas avançáveis, rascunhos locais, estados de conclusão/ajuste e telas simuladas de conversa, revisão, execução e conexão. As simulações são exercícios com respostas prontas; não executam IA nem comandos. Na Academy, a conta gratuita permite conectar a jornada ao progresso por conta e obter certificado de conclusão da jornada simplificada. O curso avançado depende da assinatura.
 
 A sincronização é opcional no gratuito, confirma a versão escolhida e protege contra sobrescrita de outro dispositivo. A verificação pública de certificado usa um código emitido pelo servidor da Academy; publicar esta vitrine estática não emite certificados.
 
 ### Experiência progressiva da amostra
 
-Uma jornada gratuita fica visível por vez: DatanO-Agents ou fundamentos. A escolha e as etapas são retomadas; cinco materiais da missão usam um editor por tela, com Material seguinte/anterior e rascunhos preservados. Instruções de instalação, prompts longos, simulações opcionais e política de armazenamento ficam recolhidos. Referências de navegação/retomada e prática focada: [player da Udemy](https://support.udemy.com/hc/en-us/sections/206457187-Course-player) e [prática/revisão do Duolingo](https://blog.duolingo.com/guide-to-duolingo-practice-hub/). Não se reproduzem interfaces proprietárias nem se alega pesquisa com alunos.
+Uma jornada gratuita fica visível por vez: Datano-Agents ou fundamentos. A escolha e as etapas são retomadas; cinco materiais da missão usam um editor por tela, com Material seguinte/anterior e rascunhos preservados. Instruções de instalação, prompts longos, simulações opcionais e política de armazenamento ficam recolhidos. Referências de navegação/retomada e prática focada: [player da Udemy](https://support.udemy.com/hc/en-us/sections/206457187-Course-player) e [prática/revisão do Duolingo](https://blog.duolingo.com/guide-to-duolingo-practice-hub/). Não se reproduzem interfaces proprietárias nem se alega pesquisa com alunos.

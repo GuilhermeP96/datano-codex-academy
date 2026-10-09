@@ -1,1 +1,1 @@
-{"name":"datano","owner":{"name":"DatanO"},"plugins":[{"name":"datano-sample","source":"./plugins/datano-sample","description":"Amostra DatanO-Agents integrada à Academy: três missões práticas, cinco materiais por entrega e revisão."}]}
+{"name":"datano","owner":{"name":"Datano"},"plugins":[{"name":"datano-sample","source":"./plugins/datano-sample","description":"Amostra Datano-Agents integrada à Academy: três missões práticas, cinco materiais por entrega e revisão."}]}

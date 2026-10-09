@@ -9,7 +9,7 @@ ENDPOINT = "https://academy.datano.com.br/api/mcp"
 
 def forward(message):
     credential = os.environ.get("DATANO_LICENSE_TOKEN", "")
-    headers = {"User-Agent": "DatanO-Agents-Sample/1.1 (+https://academy.datano.com.br)", "Content-Type": "application/json", "Accept": "application/json, text/event-stream"}
+    headers = {"User-Agent": "Datano-Agents-Sample/1.1.2 (+https://academy.datano.com.br)", "Content-Type": "application/json", "Accept": "application/json, text/event-stream"}
     if credential:
         headers["Authorization"] = "Bearer " + credential
     req = urllib.request.Request(ENDPOINT, json.dumps(message).encode(), headers=headers, method="POST")
@@ -20,7 +20,7 @@ def forward(message):
     except (urllib.error.URLError, ValueError):
         if "id" not in message:
             return None
-        return {"jsonrpc": "2.0", "id": message["id"], "error": {"code": -32000, "message": "DatanO service unavailable; no operation executed."}}
+        return {"jsonrpc": "2.0", "id": message["id"], "error": {"code": -32000, "message": "Datano service unavailable; no operation executed."}}
 
 if __name__ == "__main__":
     for line in sys.stdin:

@@ -1,4 +1,4 @@
-# Instalar e usar a amostra DatanO-Agents
+# Instalar e usar a amostra Datano-Agents
 
 Você pode deixar seu agente baixar e preparar a amostra ou instalar com os passos abaixo. Um chat sem acesso a arquivos também pode fazer a missão pela Academy, copiando os pedidos e registrando os textos.
 
@@ -6,7 +6,7 @@ Você pode deixar seu agente baixar e preparar a amostra ou instalar com os pass
 Copie o pedido abaixo em uma conversa do Codex, Claude Code ou de outro agente com internet e acesso a arquivos. Ele usa as fontes oficiais e deve explicar o que realmente conseguiu instalar. A página da Academy permite adaptar esse pedido à sua ferramenta e à missão escolhida.
 
 ```text
-Quero experimentar a amostra gratuita DatanO-Agents integrada à Academy. Fale comigo em português e sem exigir conhecimento de programação.
+Quero experimentar a amostra gratuita Datano-Agents integrada à Academy. Fale comigo em português e sem exigir conhecimento de programação.
 
 Localize e leia a fonte oficial: https://github.com/GuilhermeP96/datano-codex-academy
 Guia de instalação: https://github.com/GuilhermeP96/datano-codex-academy/blob/main/docs/AGENTS-SETUP.md
@@ -14,7 +14,7 @@ Download direto do pacote público: https://academy.datano.com.br/datano-agents-
 Conferência SHA-256: https://academy.datano.com.br/datano-agents-sample.zip.sha256
 Espaço da missão: https://academy.datano.com.br/comecar#agents-sample
 
-Se precisar pesquisar online, busque "DatanO-Agents amostra Academy GuilhermeP96 datano-codex-academy" e confirme essas fontes. A amostra não exige assinatura, token nem API key.
+Se precisar pesquisar online, busque "Datano-Agents amostra Academy GuilhermeP96 datano-codex-academy" e confirme essas fontes. A amostra não exige assinatura, token nem API key.
 
 Se você puder acessar a internet e trabalhar com arquivos, baixe o ZIP e a conferência SHA-256, compare o hash e extraia em uma pasta nova. Leia README.md e AGENTS-SETUP.md. Preserve meus arquivos e configurações existentes. Se o download falhar, consulte o mesmo repositório oficial; não use um espelho desconhecido. Se não tiver essas ferramentas, diga o que está disponível e me oriente a baixar pelo navegador, sem declarar uma instalação que não ocorreu.
 
@@ -26,7 +26,7 @@ Não publique nem envie materiais automaticamente, não invente informações e 
 ```
 
 ## Baixar pelo navegador
-1. Abra https://academy.datano.com.br/comecar#agents-sample e clique em Baixar amostra DatanO-Agents.
+1. Abra https://academy.datano.com.br/comecar#agents-sample e clique em Baixar amostra Datano-Agents.
 2. Se preferir a URL direta: https://academy.datano.com.br/datano-agents-sample.zip. A conferência SHA-256 está em https://academy.datano.com.br/datano-agents-sample.zip.sha256. Compare o hash do ZIP com esse arquivo; ele verifica integridade, não substitui conferir a fonte.
 3. Extraia em uma pasta nova e leia README.md. Preserve arquivos que já existirem. Não precisa criar assinatura, token ou API key para estas três missões.
 
@@ -53,7 +53,7 @@ claude plugin marketplace add GuilhermeP96/datano-codex-academy
 claude plugin install datano-sample@datano --scope local
 ```
 
-Dentro do Claude Code, /mcp mostra as conexões. Instalação da skill e disponibilidade de MCP são verificações separadas. Esse marketplace é da DatanO; não implica aprovação em diretório oficial.
+Dentro do Claude Code, /mcp mostra as conexões. Instalação da skill e disponibilidade de MCP são verificações separadas. Esse marketplace é da Datano; não implica aprovação em diretório oficial.
 
 ## Conectar MCP após extrair a amostra
 1. Mantenha a pasta extraída: o cliente iniciará delivery-mcp.py nela.

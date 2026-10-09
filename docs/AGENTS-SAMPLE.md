@@ -1,4 +1,4 @@
-# DatanO-Agents + Academy: amostra de entrega prática
+# Datano-Agents + Academy: amostra de entrega prática
 
 Comece em https://academy.datano.com.br/comecar#agents-sample. Escolha divulgação de negócio, atendimento ou decisão com dados. Você passa por Organizador, Criador e Revisor e produz cinco materiais, mais plano e revisão. Use seu chat de IA, registre os textos e baixe a entrega em ZIP. Não precisa instalar este pacote para usar a Academy.
 

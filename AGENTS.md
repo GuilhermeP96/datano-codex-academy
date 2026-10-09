@@ -1,6 +1,6 @@
-# Vitrine pública DatanO
+# Vitrine pública Datano
 
-HTML/CSS/JS estáticos com caminhos relativos. Identidade DatanO derivada do site canônico.
+HTML/CSS/JS estáticos com caminhos relativos. Identidade Datano derivada do site canônico.
 
 Este repositório é público. Inclua MCPs e projetos comprovadamente públicos, a apresentação genérica IRobot-Not com cenários fictícios e as duas jornadas introdutórias gratuitas autorizadas pelo proprietário (Codex/Claude, três aulas cada). Não copie aulas pagas, fontes privadas, dados corporativos, configurações, arquitetura interna ou credenciais.
 

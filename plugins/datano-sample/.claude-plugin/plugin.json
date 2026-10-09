@@ -1,9 +1,9 @@
 {
   "name": "datano-sample",
-  "version": "1.1.1",
-  "description": "Amostra DatanO-Agents: planejamento, produção e revisão de cinco materiais práticos, integrada à Academy.",
+  "version": "1.1.2",
+  "description": "Amostra Datano-Agents: planejamento, produção e revisão de cinco materiais práticos, integrada à Academy.",
   "author": {
-    "name": "DatanO"
+    "name": "Datano"
   },
   "homepage": "https://academy.datano.com.br/comecar",
   "license": "MIT"

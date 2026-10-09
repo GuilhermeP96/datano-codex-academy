@@ -29,4 +29,4 @@ with zipfile.ZipFile(staging,'w',zipfile.ZIP_DEFLATED) as archive:
 staging.replace(root/'datano-agents-sample.zip')
 checksum=hashlib.sha256((root/'datano-agents-sample.zip').read_bytes()).hexdigest()
 (root/'datano-agents-sample.zip.sha256').write_text(checksum+'  datano-agents-sample.zip\n')
-print('Built public DatanO-Agents sample: '+str(len(files))+' allowlisted files.')
+print('Built public Datano-Agents sample: '+str(len(files))+' allowlisted files.')
