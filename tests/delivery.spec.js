@@ -1,7 +1,7 @@
 import {test,expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 test('A beginner completes a delivery without code and exports their actual report',async({page})=>{
- test.setTimeout(60000);
+ test.setTimeout(120000); // Eight real stages, reload, validation and downloads on the shared VPS.
  const calls=[];page.on('request',r=>{if(r.method()==='POST')calls.push(r.url())});
  await page.goto('/');await page.getByLabel('Jornada gratuita',{exact:true}).selectOption('free-delivery');const s=page.locator('#free-delivery');
  await expect(s.getByLabel('Como quero praticar')).toHaveValue('guided');
