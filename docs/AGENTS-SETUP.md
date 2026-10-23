@@ -105,3 +105,7 @@ Conferidas em 09/10/2026:
 - MCP Codex: https://learn.chatgpt.com/docs/extend/mcp?surface=cli
 - Plugins Claude Code: https://code.claude.com/docs/en/discover-plugins
 - MCP Claude Code: https://code.claude.com/docs/en/mcp
+
+## Verificação proporcional por etapa
+
+Durante os ajustes, confira apenas o ponto que mudou. Faça a revisão conjunta quando os materiais estiverem prontos. Reaproveite informações já confirmadas; não repita pesquisas, instalações ou testes amplos sem motivo. Antecipe a conferência quando houver risco concreto e informe o que ainda não foi validado.

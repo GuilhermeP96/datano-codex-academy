@@ -20,3 +20,7 @@ Se sua ferramenta trabalha com arquivos e Node, o helper skills/delivery-kit/scr
 Este pacote é público, autoral e MIT, com três papéis e três missões. Não contém o catálogo privado nem aulas pagas. build-agents-sample.py recria o ZIP determinístico por allowlist. O pacote completo e continuidade comercial seguem os direitos da assinatura; a amostra permanece gratuita.
 
 A presença de um ZIP/manifesto não é aprovação em diretório oficial. CI e validação na VPS; instalação nativa no Claude permanece pendente quando o cliente não estiver disponível.
+
+## Verificação proporcional por etapa
+
+Durante os ajustes, confira apenas o ponto que mudou. Faça a revisão conjunta quando os materiais estiverem prontos. Reaproveite informações já confirmadas; não repita pesquisas, instalações ou testes amplos sem motivo. Antecipe a conferência quando houver risco concreto e informe o que ainda não foi validado.

@@ -16,3 +16,7 @@ Use as três missões públicas da Academy em https://academy.datano.com.br/come
 7. Se houver arquivos e Node disponíveis, e o usuário quiser concluir a entrega local, após a confirmação dele use o [helper local](scripts/assemble-delivery.mjs) com os argumentos `resultado-datano-agents.json PASTA_DA_ENTREGA`. O helper valida os campos, exige approved=true e não sobrescreve arquivos. Se essas ferramentas não estiverem disponíveis, entregue textos e JSON para importação na Academy.
 
 Não invente preços, prazos, resultados, depoimentos ou políticas. Não publicar, enviar mensagens nem chamar APIs de modelos adicionais por conta própria. A amostra roda na ferramenta que o usuário já escolheu; não solicitar credenciais. Use um negócio fictício quando o usuário só quiser experimentar.
+
+## Verificação proporcional por etapa
+
+Durante os ajustes, confira apenas o ponto que mudou. Faça a revisão conjunta quando os materiais estiverem prontos. Reaproveite informações já confirmadas; não repita pesquisas, instalações ou testes amplos sem motivo. Antecipe a conferência quando houver risco concreto e informe o que ainda não foi validado.
