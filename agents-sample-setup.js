@@ -1,4 +1,4 @@
-import {getMission} from './agents-sample-data.js';
+import {getMission,executionPolicy} from './agents-sample-data.js';
 import {escapeHTML as esc} from './agents-sample-zip.js';
 
 export const sampleSources={
@@ -44,6 +44,8 @@ Se você puder acessar a internet e trabalhar com arquivos, baixe o ZIP e a conf
  mcp:`Quero conectar o MCP de amostra. Identifique meu cliente e confirme Python 3 (python3, python ou py -3, conforme o sistema). Use o arquivo delivery-mcp.py do ZIP com seu caminho absoluto, mantendo a pasta. No Codex, registre com codex mcp add datano-sample -- EXECUTAVEL_PYTHON "CAMINHO_ABSOLUTO/delivery-mcp.py". No Claude Code, use claude mcp add --transport stdio datano-sample -- EXECUTAVEL_PYTHON "CAMINHO_ABSOLUTO/delivery-mcp.py". Em clientes que aceitam JSON mcpServers, acrescente a conexão sem substituir as existentes. Substitua os marcadores pelos valores reais. Confirme a configuração e a conexão; não basta afirmar que o comando terminou. Chame datano_sample_plan com a missão e o contexto; depois datano_sample_review com os materiais e a revisão. Essas ferramentas organizam/verificam preenchimento; a produção e revisão do conteúdo são feitas por você comigo. Não configure credenciais para a amostra.`
  };
  return `${common}
+
+${executionPolicy}
 
 ${routes[client]}
 

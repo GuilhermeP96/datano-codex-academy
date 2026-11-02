@@ -8,3 +8,9 @@ Uma skill instalada não fornece DRM nem revogação do texto. O servidor premiu
 server.json é candidato para MCP Registry; não comprova listagem. Autenticação do publicador e submissão não foram feitas. Instalação nativa Claude CLI e diretórios oficiais dependem de validação específica. O diretório OpenAI também exige OAuth para o serviço premium e proíbe upsell digital dentro do plugin; o endpoint Bearer atual atende integração CLI manual, sem alegar essa compatibilidade OAuth.
 
 CI/build/testes: `bash scripts/ci/validate.sh` na VPS. Workflow hospedado preservado em docs/ci-archive, desativado. A branch gh-pages é publicação histórica; não ativar pipeline hospedado para atualizá-la. A amostra atual é servida pela VPS no domínio Academy.
+
+## Amostra 1.1.3 — entrega e encerramento
+
+As duas skills, os pedidos da página e o contrato compartilhado com o MCP passam a exigir um executor até o resultado autorizado, revisão consolidada de bloqueantes e reaproveitamento de evidências. Os papéis não exigem agentes ou chamadas adicionais. Plano não substitui entrega completa solicitada. A aprovação humana final, limites de publicação e preservação de arquivos permanecem. O kit técnico gratuito também orienta checkout existente, integração autorizada e encerramento responsável de worktrees.
+
+Validação desta mudança: três missões pelo helper, prompts de todas as missões/papéis/clientes com o mesmo contrato, seis cenários de navegador desktop/celular, allowlist pública e build estático. O ZIP conserva 13 arquivos públicos e MIT; a versão 1.1.3 identifica a atualização. Não há medição de tokens faturados nem promessa de comportamento de todos os modelos.

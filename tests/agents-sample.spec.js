@@ -1,3 +1,4 @@
+import {sampleVersion} from '../agents-sample-data.js';
 import {test,expect} from '@playwright/test';
 import {readFile} from 'node:fs/promises';
 import {spawnSync} from 'node:child_process';
@@ -16,7 +17,7 @@ test('Setup prompts follow the chosen mission and client, preserve input and pro
  await expect(s.getByLabel('Nome do negócio ou da atividade')).toHaveValue('Meu objetivo ainda está sendo escrito');
  const packEvent=page.waitForEvent('download');await s.getByRole('link',{name:'Baixar amostra Datano-Agents'}).click();const pack=await packEvent;const bytes=await readFile(await pack.path());const digest=createHash('sha256').update(bytes).digest('hex');const checksum=await request.get('/datano-agents-sample.zip.sha256');expect(checksum.ok()).toBe(true);expect(await checksum.text()).toContain(digest);
  // Pin the published sample, matching the canonical plugin manifest and release ZIP.
- const check=spawnSync('python3',['-c',"import sys,zipfile,json\nwith zipfile.ZipFile(sys.argv[1]) as z:\n assert z.testzip() is None and len(z.namelist())==13\n assert 'codex mcp add datano-sample' in z.read('AGENTS-SETUP.md').decode()\n assert json.loads(z.read('.claude-plugin/plugin.json'))['version']=='1.1.1'",await pack.path()],{encoding:'utf8'});expect(check.status,check.stderr).toBe(0);
+ const check=spawnSync('python3',['-c',"import sys,zipfile,json\nwith zipfile.ZipFile(sys.argv[1]) as z:\n assert z.testzip() is None and len(z.namelist())==13\n assert 'codex mcp add datano-sample' in z.read('AGENTS-SETUP.md').decode()\n assert json.loads(z.read('.claude-plugin/plugin.json'))['version']==sys.argv[2]",await pack.path(),sampleVersion],{encoding:'utf8'});expect(check.status,check.stderr).toBe(0);
  for(const theme of ['dark','light']){await page.evaluate(t=>document.documentElement.dataset.theme=t,theme);expect((await new AxeBuilder({page}).include('#agents-setup').withTags(['wcag2a','wcag2aa']).analyze()).violations).toEqual([]);}
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
 });
