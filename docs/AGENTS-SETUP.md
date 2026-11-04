@@ -20,6 +20,8 @@ Se você puder acessar a internet e trabalhar com arquivos, baixe o ZIP e a conf
 
 Identifique qual cliente estou usando. No Codex, copie a pasta completa skills/delivery-kit (incluindo referências e scripts) para .agents/skills/delivery-kit no projeto atual, apenas se o destino não existir. No Claude Code, use o marketplace GuilhermeP96/datano-codex-academy e o plugin datano-sample@datano. Em outro cliente, consulte sua configuração de skills/MCP e me explique o passo disponível. O MCP é opcional para usar a skill; não registre conexões adicionais sem eu escolher essa opção.
 
+Antes de usar CMD, Windows PowerShell, pwsh ou uma integração com a máquina local, confira em cada ponta a versão do shell, a página de código do console, ANSI/OEM, idioma/localidade e o encoding esperado pelo arquivo, programa, pipe ou transporte. Não presuma que o ambiente remoto e a máquina local são iguais. Use UTF-8 só quando toda a cadeia aceitar; caso contrário, respeite o consumidor. Preserve BOM, quebras de linha, separadores e bytes binários. Quando for seguro, valide a ida e volta com "ação, João, ç" e reutilize o diagnóstico somente enquanto sessão, ambiente e integração não mudarem. Não altere globalmente perfis ou consoles compartilhados.
+
 Quero a missão "Divulgue seu negócio" (id: divulgacao). Use o objetivo do meu brief-datano-agents.json, se eu fornecer esse arquivo. Caso contrário, peça nome da atividade, objetivo, público e informações confirmadas; posso escolher um exemplo fictício.
 Conduza os papéis Organizador, Criador e Revisor. Produza os cinco materiais completos: Apresentação da sua oferta; Página de apresentação; Calendário de sete dias; Três publicações; Mensagens de contato. Entregue plano, materiais e parecer de revisão, além de resultado-datano-agents.json com mission, context, plan, artifacts e review. Mantenha approved=false até minha conferência. Explique como voltar à Academy e abrir esse arquivo em "Minha ferramenta gerou um arquivo de resultado"; a página exigirá nova revisão antes do ZIP final.
 Não publique nem envie materiais automaticamente, não invente informações e não habilite provedores pagos por conta própria. Relate somente downloads, instalação e testes realmente realizados.
@@ -105,6 +107,10 @@ Conferidas em 09/10/2026:
 - MCP Codex: https://learn.chatgpt.com/docs/extend/mcp?surface=cli
 - Plugins Claude Code: https://code.claude.com/docs/en/discover-plugins
 - MCP Claude Code: https://code.claude.com/docs/en/mcp
+
+## Texto no Windows e integrações com a máquina local
+
+Antes de executar CMD, Windows PowerShell, pwsh ou integrar um ambiente remoto à máquina local, confira em cada ponta: versão do shell, página de código do console, ANSI/OEM, idioma/localidade e o encoding esperado pelo arquivo, programa, pipe ou transporte. Não suponha que as pontas usam o mesmo padrão. Force UTF-8 somente quando toda a cadeia e o consumidor aceitarem; senão use o encoding exigido pelo consumidor. Preserve BOM, quebras de linha, separadores e bytes binários. Quando for seguro, valide a ida e a volta com uma amostra curta, como `ação, João, ç`. Reutilize o diagnóstico apenas enquanto sessão, ambiente e integração forem os mesmos. Não mude globalmente perfis ou consoles compartilhados.
 
 ## Verificação proporcional por etapa
 

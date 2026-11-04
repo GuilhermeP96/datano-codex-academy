@@ -5,7 +5,7 @@ Comece em https://academy.datano.com.br/comecar#agents-sample. Escolha divulgaç
 Os três papéis orientam a conversa na ferramenta de IA escolhida. A Academy monta pedidos, preserva textos no navegador e organiza arquivos; não executa modelos nem lê sua conversa. Rascunhos iniciais são modelos editáveis, identificados como tais. Você revisa informações antes de usar. A amostra não publica nem envia materiais.
 
 ## Baixar e preparar com seu agente
-A amostra de instalação 1.1.3 inclui um [passo a passo de instalação e uso](AGENTS-SETUP.md), com pedido pronto para o agente localizar a fonte oficial, baixar o ZIP, conferir SHA-256 e preparar a skill ou o MCP. A Academy tem o botão Copiar pedido para baixar e preparar, adaptado à ferramenta e à missão. Sem ferramentas de arquivos, siga o caminho pelo navegador.
+A amostra de instalação 1.1.4 inclui um [passo a passo de instalação e uso](AGENTS-SETUP.md), com pedido pronto para o agente localizar a fonte oficial, baixar o ZIP, conferir SHA-256 e preparar a skill ou o MCP. A Academy tem o botão Copiar pedido para baixar e preparar, adaptado à ferramenta e à missão. Sem ferramentas de arquivos, siga o caminho pelo navegador.
 
 ## A mesma missão na skill/MCP
 No Claude Code, adicione o marketplace GuilhermeP96/datano-codex-academy e instale datano-sample@datano. Peça à skill delivery-kit a missão desejada. No Codex, copie a pasta completa skills/delivery-kit para .agents/skills/delivery-kit; ela já inclui suas referências, scripts e package.json. A skill também pode consultar os contratos via MCP datano-delivery. Os três contratos estão em skills/delivery-kit/references/agents-sample-data.js.
@@ -20,6 +20,10 @@ Se sua ferramenta trabalha com arquivos e Node, o helper skills/delivery-kit/scr
 Este pacote é público, autoral e MIT, com três papéis e três missões. Não contém o catálogo privado nem aulas pagas. build-agents-sample.py recria o ZIP determinístico por allowlist. O pacote completo e continuidade comercial seguem os direitos da assinatura; a amostra permanece gratuita.
 
 A presença de um ZIP/manifesto não é aprovação em diretório oficial. CI e validação na VPS; instalação nativa no Claude permanece pendente quando o cliente não estiver disponível.
+
+## Texto no Windows e integrações com a máquina local
+
+Antes de executar CMD, Windows PowerShell, pwsh ou integrar um ambiente remoto à máquina local, confira em cada ponta: versão do shell, página de código do console, ANSI/OEM, idioma/localidade e o encoding esperado pelo arquivo, programa, pipe ou transporte. Não suponha que as pontas usam o mesmo padrão. Force UTF-8 somente quando toda a cadeia e o consumidor aceitarem; senão use o encoding exigido pelo consumidor. Preserve BOM, quebras de linha, separadores e bytes binários. Quando for seguro, valide a ida e a volta com uma amostra curta, como `ação, João, ç`. Reutilize o diagnóstico apenas enquanto sessão, ambiente e integração forem os mesmos. Não mude globalmente perfis ou consoles compartilhados.
 
 ## Verificação proporcional por etapa
 

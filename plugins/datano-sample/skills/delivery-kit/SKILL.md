@@ -17,6 +17,10 @@ Use as três missões públicas da Academy em https://academy.datano.com.br/come
 
 Não invente preços, prazos, resultados, depoimentos ou políticas. Não publicar, enviar mensagens nem chamar APIs de modelos adicionais por conta própria. A amostra roda na ferramenta que o usuário já escolheu; não solicitar credenciais. Use um negócio fictício quando o usuário só quiser experimentar.
 
+## Texto no Windows e integrações com a máquina local
+
+Antes de executar CMD, Windows PowerShell, pwsh ou integrar um ambiente remoto à máquina local, confira em cada ponta: versão do shell, página de código do console, ANSI/OEM, idioma/localidade e o encoding esperado pelo arquivo, programa, pipe ou transporte. Não suponha que as pontas usam o mesmo padrão. Force UTF-8 somente quando toda a cadeia e o consumidor aceitarem; senão use o encoding exigido pelo consumidor. Preserve BOM, quebras de linha, separadores e bytes binários. Quando for seguro, valide a ida e a volta com uma amostra curta, como `ação, João, ç`. Reutilize o diagnóstico apenas enquanto sessão, ambiente e integração forem os mesmos. Não mude globalmente perfis ou consoles compartilhados.
+
 ## Verificação proporcional por etapa
 
 Durante os ajustes, confira apenas o ponto que mudou. Faça a revisão conjunta quando os materiais estiverem prontos. Reaproveite informações já confirmadas; não repita pesquisas, instalações ou testes amplos sem motivo. Antecipe a conferência quando houver risco concreto e informe o que ainda não foi validado.

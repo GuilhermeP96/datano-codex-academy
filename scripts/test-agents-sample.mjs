@@ -8,7 +8,8 @@ import {buildSetupPrompt} from '../agents-sample-setup.js';
 import {makeZip,calendarCSV,pageHTML} from '../agents-sample-zip.js';
 const temp=await mkdtemp(join(tmpdir(),'datano-sample-'));
 try{
- assert.equal(sampleVersion,'1.1.3');
+ assert.equal(sampleVersion,'1.1.4');
+ for(const marker of ['máquina local','ANSI/OEM','ambiente remoto','UTF-8','BOM','ação, João, ç'])assert(executionPolicy.includes(marker),'Missing encoding policy marker: '+marker);
  for(const mission of missions){
   for(const role of roles)assert(buildPrompt(mission.id,role.id,{}).includes(executionPolicy));
   for(const client of ['agent','codex','claude','mcp'])assert(buildSetupPrompt(mission.id,client).includes(executionPolicy));
